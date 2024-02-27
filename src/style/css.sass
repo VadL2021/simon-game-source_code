@@ -1,0 +1,83 @@
+*
+    margin:0
+
+:root
+    font-size: 16px
+
+#root 
+  font-family: Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
+  margin-top: 60px
+
+#TheGame
+    h3
+        margin: 40px 0 0
+    ul 
+        list-style-type: none
+        padding: 0
+    li 
+        display: inline-block
+        margin: 0 10px
+    a 
+        color: #42b983
+.gameTablet
+    position: relative
+    margin: 3rem
+    width: 20rem
+    height: 20rem
+    border-radius: 100%
+    background-color: rgb(40, 40, 40)
+    .active
+        opacity: 60%
+    .yellow 
+        position: absolute
+        top:1rem
+        left:1rem
+        width: 9rem
+        height: 9rem
+        border-radius: 100% 0 0 0 
+        background-color: rgb(240, 240, 0)
+        &:hover
+            opacity: 60%
+    .blue
+        position: relative
+        top:1rem
+        left:10rem
+        bottom: 5rem
+        width: 9rem
+        height: 9rem
+        border-radius: 0 100% 0 0
+        background-color: rgb(0, 0, 240)
+        &:hover
+            opacity: 60%
+    .green
+        position: relative
+        top:1rem
+        left:10rem
+        bottom: 5rem
+        width: 9rem
+        height: 9rem
+        border-radius: 0 0 100% 0
+        background-color: rgb(0, 240, 0)
+        &:hover
+            opacity: 60%
+    .red
+        position: absolute
+        top:10rem
+        left:1rem
+        bottom: 5rem
+        width: 9rem
+        height: 9rem
+        border-radius: 0 0 0 100%
+        background-color: rgb(240, 0, 0)
+        &:hover
+            opacity: 60%
+.controlTablet
+    position: absolute
+    left:25rem
+    top:5rem
+    .hidden
+        display: none
